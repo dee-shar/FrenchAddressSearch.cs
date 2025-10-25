@@ -18,27 +18,27 @@ namespace FrenchAddressSearchApi
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public async Task<string> searchAddress(string parameters)
+        public async Task<string> SearchAddress(string parameters)
         {
             var response = await httpClient.GetAsync($"{apiUrl}/search/{parameters}");
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
 
-        public async Task<string> getRegions()
+        public async Task<string> GetRegions()
         {
             var response = await httpClient.GetAsync($"{apiUrl}/regions");
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
 
-        public async Task<string> getCommunes()
+        public async Task<string> GetCommunes()
         {
             var response = await httpClient.GetAsync($"{apiUrl}/communes_associees_deleguees");
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
-        public async Task<string> getDepartaments()
+        public async Task<string> GetDepartaments()
         {
             var response = await httpClient.GetAsync($"{apiUrl}/departements");
             response.EnsureSuccessStatusCode();
