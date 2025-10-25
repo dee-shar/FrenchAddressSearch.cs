@@ -5,7 +5,6 @@ Web-API for [geo.api.gouv.fr](https://geo.api.gouv.fr) an open data platform tha
 ```cs
 using System;
 using FrenchAddressSearchApi;
-using System.Threading.Tasks;
 
 namespace Application
 {
@@ -14,7 +13,7 @@ namespace Application
         static async Task Main()
         {
             var api = new FrenchAddressSearch();
-            string regions = await api.GEtRegions();
+            string regions = await api.GetRegions();
             Console.WriteLine(regions);
         }
     }
