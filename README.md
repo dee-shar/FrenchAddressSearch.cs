@@ -14,7 +14,7 @@ namespace Application
         static async Task Main()
         {
             var api = new FrenchAddressSearch();
-            string regions = await api.getRegions();
+            string regions = await api.GEtRegions();
             Console.WriteLine(regions);
         }
     }
