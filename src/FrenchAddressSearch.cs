@@ -33,6 +33,7 @@ namespace FrenchAddressSearchApi
             var response = await httpClient.GetAsync($"{apiUrl}/communes_associees_deleguees");
             return await response.Content.ReadAsStringAsync();
         }
+        
         public async Task<string> GetDepartaments()
         {
             var response = await httpClient.GetAsync($"{apiUrl}/departements");
