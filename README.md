@@ -1,9 +1,8 @@
-# french_address_search.sh
+# FrenchAddressSearch.cs
 Web-API for [geo.api.gouv.fr](https://geo.api.gouv.fr) an open data platform that provides various data sets related to addresses in France
 
 ## Example
 ```cs
-using System;
 using FrenchAddressSearchApi;
 
 namespace Application
